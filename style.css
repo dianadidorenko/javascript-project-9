@@ -1,0 +1,125 @@
+/* Practice 1 */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.notification__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notification__item {
+  border-top: 3px solid rgb(153, 100, 2);
+  background-color: rgb(255, 186, 59);
+  color: #555555;
+  padding: 15px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.notification__close {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  font-size: 20px;
+  color: brown;
+}
+.notification-title {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.notification__text {
+  max-width: 500px;
+}
+
+/* Practice 2 */
+
+.football-field__block {
+  background: url(football-field.jpg) center/cover;
+  height: 100vh;
+  position: relative;
+}
+.ball {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+
+/* Practice 3 */
+
+.traffic-light__body {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 30px;
+}
+.traffic-light__items {
+  display: flex;
+  align-items: center;
+  background: blanchedalmond;
+  border: 5px solid darkgrey;
+  padding: 50px;
+  column-gap: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px #7d7d7d;
+}
+.item {
+  background: grey;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.traffic-button {
+  background: rgb(191, 191, 191);
+  padding: 150px 50px;
+  font-size: 40px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px #7d7d7d;
+}
+
+.tasks-block {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+.tasks-block a,
+.tasks-block-traffic a {
+  color: rgb(58, 58, 58);
+  text-decoration: none;
+}
+.tasks-block a:hover {
+  text-decoration: underline;
+}
+.tasks-block-football {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
+.tasks-block-traffic {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
